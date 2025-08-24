@@ -1,0 +1,41 @@
+/* global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* { margin:0; padding:0; box-sizing: border-box; }
+
+:root {
+  --kei-blue: #003366;
+  --kei-dark: #000627;
+  --kei-light: #3E6286;
+  --kei-grey: #282828;
+
+  --underground-red: #990000;
+  --underground-light: #D64B2F;
+  --underground-dark: #5A0000;
+  --underground-accent: #009097;
+  --underground-grey: #313131;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html, body {
+  line-height: 1.5;
+  font-family: "Quicksand", "Lexend", sans-serif;
+  background-color: var(--kei-grey);
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* links */
+a:link, a:visited { text-decoration: inherit; color: inherit; transition: all 0.5s ease-in-out; }
+a:hover { color: var(--kei-blue); opacity: 0.6; }
+
+.align-right { text-align: right; }

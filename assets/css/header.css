@@ -1,0 +1,47 @@
+/* header.css */
+
+/* Header */
+header { position: relative; background: var(--kei-dark); }  
+header .logo img { height: 55px; }
+header .container { display: flex; justify-content: space-between; align-items: center; }  
+
+/* Navigation */
+nav ul a {
+  width: max-content;
+  color: var(--white);
+  font-size: var(--fs6);
+  font-weight: var(--fw500);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.open-menu, nav .close-menu { position: fixed; right: 10px; z-index: 99; transition: all 0.1 ease; color: #eee; font-size: 30px; padding: 3px; border-radius: 8px; }  
+nav .close-menu { position: absolute; top: 20px; right: 15px; }
+
+.open-menu:hover { color: var(--kei-blue); }
+
+@media (min-width: 1024px) {
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10px;
+      transition: var(--transition);
+      z-index: 1;
+    }
+    nav ul { display: flex; justify-content: flex-end; align-items: center; }
+    nav ul a { position: relative; }
+    nav ul a:hover { background: none; }
+    nav ul a::before { content: ''; position: absolute; bottom: 0; left: 25%; background: transparent; width: 50%; height: 2px; }
+    nav ul a:hover::before { background: var(--white); }
+    nav .large {  display: block; margin-left: 15px; }
+    .open-menu, .close-menu { display: none; }
+}
+
+@media (max-width: 1024px) {
+  nav { background: var(--kei-light); border-bottom: 3px solid var(--kei-blue); position: fixed; bottom: 100%; left: 0; width: 100%; padding: 20px 10px; box-shadow: 0 2px 5px hsla(0, 0%, 0%, .5); visibility: hidden; transition: var(--transition); z-index: 1; }  
+  nav.active { transform: translateY(100%); visibility: visible; } 
+  nav a { width: max-content; color: var(--white); font-size: var(--fs6); font-weight: var(--fw500); padding: 10px 20px; border-radius: 8px; }  
+  nav a:hover { color: var(--kei-blue); }
+}
