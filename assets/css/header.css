@@ -3,6 +3,7 @@
 /* Header */
 header { position: relative; background: var(--kei-dark); } 
 header .logo img { height: 55px; }
+header .logo { cursor: pointer; }
 header .container { display: flex; justify-content: space-between; align-items: center; }  
 
 /* Navigation */
@@ -15,6 +16,7 @@ nav ul a {
   border-radius: 8px;
 }
 
+/* buttons */
 .open-menu, nav .close-menu { position: fixed; right: 10px; z-index: 99; transition: all 0.1 ease; color: #eee; font-size: 30px; padding: 3px; border-radius: 8px; }  
 nav .close-menu { position: absolute; top: 20px; right: 15px; }
 
