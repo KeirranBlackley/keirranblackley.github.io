@@ -1,7 +1,7 @@
 /* header.css */
 
 /* Header */
-header { position: relative; background: var(--kei-dark); }  
+header { position: relative; background: var(--kei-dark); } 
 header .logo img { height: 55px; }
 header .container { display: flex; justify-content: space-between; align-items: center; }  
 
