@@ -108,7 +108,7 @@ input[type=submit]:hover, form button:hover, .submit:hover {
 /* Style the checkmark/indicator */
 .checkbox .checkmark:after {
   left: 8px;
-  top: 4px;
+  top: 6px;
   width: 5px;
   height: 10px;
   border: solid white;
