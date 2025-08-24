@@ -55,7 +55,6 @@ html {
 body { overflow-x: hidden; }
 
 .container { padding: 30px 15px; padding-right: 8px; }
-
 button.large {
   float: left; 
   margin: 10px;
@@ -98,7 +97,8 @@ h5.title { font-size: var(--fs5); font-weight: var(--fw500); }
 }
 .hero .title { margin-bottom: 50px; }
 .hero .title span { background-color: #eee; color: var(--kei-light); }
-  
+.cover .content { max-width: 1200px; margin: auto; }
+
 /* DOWNLOAD */
 
 .download { padding: 80px 0; }
