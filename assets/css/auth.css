@@ -40,7 +40,7 @@ input, select, textarea {
 
 input[type=submit], form button, .submit {
   width: 100%;
-  background-color: var(--form-accent-col); 
+  background-color: var(--kei-dark); 
   color: white;
   padding: 14px 20px;
   margin: 16px auto;
