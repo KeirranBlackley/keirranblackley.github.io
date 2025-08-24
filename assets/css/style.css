@@ -176,7 +176,7 @@ h5.title { font-size: var(--fs5); font-weight: var(--fw500); }
 }
 
 /* Content */
-.overview .content { padding: 0 25px 40px; }
+.overview .content { padding: 25px 40px; }
 .overview .title { margin-bottom: 20px; }
 .overview p { margin-bottom: 40px; color: var(--light-periwinkle); }
 
