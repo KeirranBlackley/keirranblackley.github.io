@@ -77,6 +77,8 @@ ul.directories {
   color: #fff;
 }
 
+.content { background-color: #eee; }
+
 .hero-content img {
   max-height: 90px;
 }
