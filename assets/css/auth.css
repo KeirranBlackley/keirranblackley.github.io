@@ -41,6 +41,7 @@ input, select, textarea {
 input[type=submit], form button, .submit {
   width: 100%;
   max-width: 300px;
+  display: block;
   background-color: var(--kei-blue); 
   color: white;
   padding: 14px 20px;
