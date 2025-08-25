@@ -44,8 +44,8 @@ input[type=submit], form button, .submit {
   display: block;
   background-color: var(--kei-blue); 
   color: white;
-  padding: 14px 20px;
-  margin: 16px auto;
+  padding: 12px 20px;
+  margin: 24px auto;
   border: none;
   border-radius: 12px;
   cursor: pointer;
