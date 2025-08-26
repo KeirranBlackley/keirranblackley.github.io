@@ -10,7 +10,7 @@
   --checkbox-checkmark-colour: var(--form-success); 
 }
 
-.alert { margin-bottom: 16px; padding: 4px 8px; border-radius: 4px; background-color: #607d8b; color: #fff; }
+.alert { margin: 16px auto; padding: 4px 8px; border-radius: 4px; background-color: #607d8b; color: #fff; }
 .alert.error { background-color: var(--form-error); color: #fff; }
 .alert.warning { background-color: var(--form-warning); color: #000; }
 .alert.success { background-color: var(--form-success); color: #fff; }
