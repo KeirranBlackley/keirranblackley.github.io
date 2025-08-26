@@ -42,7 +42,7 @@ input[type=submit], form button, .submit {
   width: 100%;
   max-width: 300px;
   display: block;
-  background-color: var(--kei-blue); 
+  background-color: #003366; 
   color: white;
   padding: 12px 20px;
   margin: 24px auto;
@@ -55,7 +55,7 @@ input[type=submit], form button, .submit {
 }
 
 input[type=submit]:hover, form button:hover, .submit:hover {
-  background-color: var(--kei-dark);
+  background-color: #282828;
 }
 
 .checkbox {
