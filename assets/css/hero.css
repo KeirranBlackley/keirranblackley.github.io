@@ -1,65 +1,19 @@
+/* hero.css */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --background: #1a1a1a;
+    --text: #eee;
+}
+
 body {
-  background-color: #1a1a1a;
-  color: #eee;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 a:link, a:visited { width: 100%; display: block; color: inherit; text-decoration: inherit; }
 a:hover { opacity: 0.8; }
-
-ul.directories {
-  list-style-type: none;
-}
-
-.directories li {
-  background: #003454;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 10px;
-  padding: 12px 40px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.directories li:hover {
-  background: #282828;
-}
-
-
-.cover {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.cover-content {
-  position: relative;
-  z-index: 2;
-  color: #eee;
-}
-
-.cover-content .content {
-  background-color: #eee;
-  color: #1a1a1a;
-  max-width: 1200px;
-  width: 100%;
-  padding: 20px 40px;
-}
-.cover-content .content h1,
-.cover-content .content h2,
-.cover-content .content h3,
-.cover-content .content h4,
-.cover-content .content h5 { margin-bottom: 20px; }
-
-.cover-content .content p,
-.cover-content .content span { margin: 10px auto; }
-
-.cover-content .content ul { list-style-type: none; }
 
 .hero {
   position: relative;
@@ -74,15 +28,11 @@ ul.directories {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #fff;
+  color: var(--text);
 }
 
-.content { background-color: #eee; }
-
-.hero-content img {
-  max-height: 90px;
-}
-
+/* Logo Image */
+.hero-content img { max-height: 75px; margin: 24px auto; }
 @media screen and (max-width: 768px) {
   .hero-content img { max-height: 60px; }
 }
@@ -97,19 +47,21 @@ ul.directories {
   margin-bottom: 2rem;
 }
 
-.btn-primary {
-  background: #003454;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 12px 40px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s;
+button {
+    display: block;
+    margin: 10px auto;
+    background: #003454;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-.btn-primary:hover {
+button:hover {
   background: #282828;
 }
 
@@ -136,3 +88,4 @@ ul.directories {
   0% { background-position: 0 0; }
   100% { background-position: 400px 400px; }
 }
+
