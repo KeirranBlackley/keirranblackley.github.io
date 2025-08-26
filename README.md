@@ -1,2 +1,3 @@
 # keirranblackley.github.io
- Website Hosted using GitHub Pages
+
+Static Website hosted with GitHub Pages.
