@@ -50,7 +50,6 @@ input[type=submit], form button, .submit {
   border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.5s ease; 
-  font-size: large;
   border: 1px solid #eee;
   border-radius: 8px;
 }
