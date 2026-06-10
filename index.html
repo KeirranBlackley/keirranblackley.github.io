@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keirran Blackley — Electronic Security &amp; Technology</title>
+    <meta name="description" content="Keirran Blackley — Electronic Security Technician and self-taught developer based in New South Wales, Australia.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="global.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+
+    <!-- ── Navigation ──────────────────────────────────────────── -->
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">kb<em>.</em></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="resume.html" class="nav-cta">Resume</a></li>
+            </ul>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+            <a href="#about"      class="drawer-link">About</a>
+            <a href="#skills"     class="drawer-link">Skills</a>
+            <a href="#experience" class="drawer-link">Experience</a>
+            <a href="#projects"   class="drawer-link">Projects</a>
+            <a href="#education"  class="drawer-link">Education</a>
+            <a href="resume.html">View Resume &rarr;</a>
+        </div>
+    </nav>
+
+    <!-- ── Hero ────────────────────────────────────────────────── -->
+    <section id="hero">
+        <div class="hero-eyebrow">New South Wales, Australia</div>
+        <h1 class="hero-name">Keirran<br>Blackley</h1>
+        <div class="hero-typewriter-row">
+            <span id="tw"></span><span class="hero-cursor"></span>
+        </div>
+        <p class="hero-desc">
+            7 years in electronic security &mdash; alarms, CCTV, access control, and beyond.
+            Self-taught developer building real products. Driven by curiosity, grounded by experience.
+        </p>
+        <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary">See My Work</a>
+            <a href="resume.html" class="btn btn-ghost">View Resume</a>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <div class="scroll-mouse"></div>
+            <span class="hero-scroll-label">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ── About ────────────────────────────────────────────────── -->
+    <div class="section-border">
+        <section id="about" class="section">
+            <p class="section-eyebrow reveal">About me</p>
+            <h2 class="section-heading reveal">Builder. Technician.<br>Problem Solver.</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>Security has been my career foundation for 7 years, and it's a field I genuinely care about. Along the way I've stepped back at times to study, give back through community service roles, and be present for my family &mdash; experiences that have made me more dependable and people-focused in everything I do.</p>
+                    <p>On the side, I taught myself programming and built StoreStock, a ServiceM8 add-on that connects with SKUNKEI, my own budget and finance web app &mdash; a project born from a vision to one day develop a dedicated security platform.</p>
+                    <p>I take initiative, keep growing, and bring more to the table than just the job description.</p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <div class="stat-num">7+</div>
+                        <div class="stat-label">Years in electronic security</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">3</div>
+                        <div class="stat-label">Personal software projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">NSW</div>
+                        <div class="stat-label">Based in New South Wales</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ── Skills ───────────────────────────────────────────────── -->
+    <div class="section-border">
+        <section id="skills" class="section">
+            <p class="section-eyebrow reveal">What I know</p>
+            <h2 class="section-heading reveal">Skills &amp; Expertise</h2>
+            <div class="skills-filter reveal">
+                <button class="filter-pill active" data-filter="all">All</button>
+                <button class="filter-pill" data-filter="security">Security &amp; Trade</button>
+                <button class="filter-pill" data-filter="technology">Technology</button>
+                <button class="filter-pill" data-filter="people">People</button>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-group" data-cat="security">
+                    <div class="skill-group-label">Security &amp; Trade</div>
+                    <div class="skill-chips">
+                        <span class="chip">Alarm Systems</span>
+                        <span class="chip">CCTV</span>
+                        <span class="chip">Access Control</span>
+                        <span class="chip">Data Cabling</span>
+                        <span class="chip">Electronic Trade</span>
+                        <span class="chip">Mechanical Trade</span>
+                        <span class="chip">Installation</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-cat="technology">
+                    <div class="skill-group-label">Technology</div>
+                    <div class="skill-chips">
+                        <span class="chip">Web Development</span>
+                        <span class="chip">Software Dev</span>
+                        <span class="chip">Hardware</span>
+                        <span class="chip">Computer Servicing</span>
+                        <span class="chip">ServiceM8</span>
+                    </div>
+                </div>
+                <div class="skill-group" data-cat="people">
+                    <div class="skill-group-label">People</div>
+                    <div class="skill-chips">
+                        <span class="chip">Empathy</span>
+                        <span class="chip">Emotional Intelligence</span>
+                        <span class="chip">Peer Support</span>
+                        <span class="chip">Family Wellbeing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ── Experience ───────────────────────────────────────────── -->
+    <div class="section-border">
+        <section id="experience" class="section">
+            <p class="section-eyebrow reveal">Where I've been</p>
+            <h2 class="section-heading reveal">Experience</h2>
+            <div class="exp-tabs reveal">
+
+                <div class="tab-nav" role="tablist" aria-label="Experience categories">
+                    <button class="tab-btn active" role="tab" aria-selected="true"  aria-controls="tab-security" data-tab="security">Security</button>
+                    <button class="tab-btn"         role="tab" aria-selected="false" aria-controls="tab-services" data-tab="services">Services</button>
+                    <button class="tab-btn"         role="tab" aria-selected="false" aria-controls="tab-other"    data-tab="other">Other</button>
+                </div>
+
+                <!-- Security tab -->
+                <div class="tab-panel active" id="tab-security" role="tabpanel">
+                    <div class="timeline">
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Apprentice Alarms Technician</div>
+                                        <div class="tl-org">Sentinel Alarms &middot; 5 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Oct 2023 &ndash; Feb 2024</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Installed, programmed, and maintained residential security systems.</li>
+                                            <li>Worked with intrusion alarms, sensors, control panels, and monitoring equipment.</li>
+                                            <li>Collaborated as part of a team on installations, cabling, and servicing.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Locksmith Apprentice</div>
+                                        <div class="tl-org">Alert Locks and Security &middot; 1 yr 1 mo</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Jul 2022 &ndash; Jul 2023</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Assisted qualified locksmiths with residential and commercial mechanical locks.</li>
+                                            <li>Performed repairs, rekeying, and key cutting.</li>
+                                            <li>Supported emergency call-outs, lockouts, and security upgrades.</li>
+                                            <li>Learned industry tools, techniques, and safety practices.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Apprentice Electrician &mdash; Roller Door Technician</div>
+                                        <div class="tl-org">JJC Electrics &middot; 5 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Oct 2021 &ndash; Feb 2022</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Installed, wired, and commissioned 3-phase commercial roller doors.</li>
+                                            <li>Contributed to the Sydney Football Stadium redevelopment project.</li>
+                                            <li>Maintained strong adherence to WHS standards, site protocols, and project timelines.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Apprentice Electronic Security Technician</div>
+                                        <div class="tl-org">Prosys Services &middot; 9 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Oct 2017 &ndash; Jun 2018</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Assisted with installation, programming, and maintenance of alarms, CCTV, access control, and intercoms.</li>
+                                            <li>Supported senior technicians with fault finding and system testing to industry standards.</li>
+                                            <li>Gained hands-on experience reading technical diagrams, running and terminating cabling, and applying WHS requirements.</li>
+                                            <li>Delivered professional on-site support and maintained accurate job documentation.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Services tab -->
+                <div class="tab-panel" id="tab-services" role="tabpanel">
+                    <div class="timeline">
+
+                        <div class="tl-item current">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Family Carer</div>
+                                        <div class="tl-org">Keirran Blackley &middot; 9 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Oct 2025 &ndash; Present</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Reliably provide dedicated support to a family member within the home environment.</li>
+                                            <li>Committed to providing a safe, comfortable, and nurturing space for loved ones.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Youth Consultant</div>
+                                        <div class="tl-org">Youthblock &middot; 6 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Jun 2019 &ndash; Nov 2019</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Advocated for better medical field support for young people experiencing hardship.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Other tab -->
+                <div class="tab-panel" id="tab-other" role="tabpanel">
+                    <div class="timeline">
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Light Vehicle Mechanic Apprentice</div>
+                                        <div class="tl-org">MBL Service Station &middot; 7 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Aug 2018 &ndash; Feb 2019</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Performed maintenance and repair on consumer vehicles.</li>
+                                            <li>Learned diagnostic procedures using OBDII devices and identifying basic electrical faults.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tl-item">
+                            <div class="tl-dot"></div>
+                            <div class="tl-card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-card-head">
+                                    <div>
+                                        <div class="tl-title">Crew Person</div>
+                                        <div class="tl-org">McDonald's &middot; 8 months</div>
+                                    </div>
+                                    <div class="tl-right">
+                                        <div class="tl-date">Sep 2015 &ndash; Apr 2016</div>
+                                        <div class="tl-chevron">&#9662;</div>
+                                    </div>
+                                </div>
+                                <div class="tl-body">
+                                    <div class="tl-body-inner">
+                                        <ul>
+                                            <li>Delivered fast, friendly customer service in a high-volume team environment.</li>
+                                            <li>Prepared food items to standard and maintained cleanliness of workstation.</li>
+                                            <li>Worked collaboratively as part of a team during busy service periods.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- ── Projects ─────────────────────────────────────────────── -->
+    <div class="section-border">
+        <section id="projects" class="section">
+            <p class="section-eyebrow reveal">What I've built</p>
+            <h2 class="section-heading reveal">Personal Projects</h2>
+            <div class="projects-grid">
+
+                <div class="proj-card reveal">
+                    <div class="proj-card-top">
+                        <div class="proj-icon">&#128230;</div>
+                        <span class="proj-badge">Web App</span>
+                    </div>
+                    <div class="proj-name">StoreStock</div>
+                    <div class="proj-desc">ServiceM8 OAuth&nbsp;2.0 add-on for trade businesses to track materials and inventory across jobs in real time.</div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">PHP</span>
+                        <span class="proj-tag">ServiceM8 API</span>
+                        <span class="proj-tag">OAuth 2.0</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-card-top">
+                        <div class="proj-icon">&#128200;</div>
+                        <span class="proj-badge">Web App</span>
+                    </div>
+                    <div class="proj-name">SKUNKEI</div>
+                    <div class="proj-desc">Budget and finance platform for trade businesses. Hosts StoreStock and manages accounts, reporting, and subscriptions.</div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">PHP</span>
+                        <span class="proj-tag">JavaScript</span>
+                        <span class="proj-tag">Stripe</span>
+                        <span class="proj-tag">MySQL</span>
+                        <span class="proj-tag">RESTful API</span>
+                    </div>
+                </div>
+
+                <div class="proj-card reveal">
+                    <div class="proj-card-top">
+                        <div class="proj-icon">&#9881;&#65039;</div>
+                        <span class="proj-badge">CMS</span>
+                    </div>
+                    <div class="proj-name">KeiCMS</div>
+                    <div class="proj-desc">Custom-built content management system powering the SKUNKEI suite. Handles routing, auth, multi-site resolution, and templating.</div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">PHP</span>
+                        <span class="proj-tag">MySQL</span>
+                        <span class="proj-tag">RESTful API</span>
+                        <span class="proj-tag">Multi-site</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- ── Education & Licences ─────────────────────────────────── -->
+    <div class="section-border">
+        <section id="education" class="section">
+            <p class="section-eyebrow reveal">Learning</p>
+            <h2 class="section-heading reveal">Education &amp; Licences</h2>
+
+            <div class="edu-grid reveal">
+                <div class="edu-card">
+                    <div class="edu-qual">Certificate III in Community Services</div>
+                    <div class="edu-date">Expected Feb 2027</div>
+                    <div class="edu-inst">TAFE NSW</div>
+                    <ul class="edu-notes">
+                        <li>Client support, empowerment, and advocacy for individual needs.</li>
+                        <li>Building caring and supportive relationships with people accessing services.</li>
+                        <li>Conflict management and response to concerning behaviours.</li>
+                        <li>Individualised support planning and prioritisation.</li>
+                    </ul>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-qual">Certificate II in Communication for the Workplace</div>
+                    <div class="edu-date">2015</div>
+                    <div class="edu-inst">MTC Australia</div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-qual">Certificate II in Workplace Health and Safety</div>
+                    <div class="edu-date">2015</div>
+                    <div class="edu-inst">MTC Australia</div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-qual">Record of School Achievement (RoSA)</div>
+                    <div class="edu-date">2015</div>
+                    <div class="edu-inst">Bass High School</div>
+                    <ul class="edu-notes">
+                        <li>Passing grades in English, Science, and Mathematics.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lic-heading reveal">Licences &amp; Certifications</div>
+            <div class="lic-grid reveal">
+                <div class="lic-card">
+                    <div class="lic-name">NSW Construction Induction White Card</div>
+                    <div class="lic-issuer">TCP Training</div>
+                    <div class="lic-note">Work Safely in the Construction Industry</div>
+                </div>
+                <div class="lic-card">
+                    <div class="lic-name">Probationary Drivers Licence</div>
+                    <div class="lic-issuer">Service NSW</div>
+                    <div class="lic-note">Red P1 Licence</div>
+                </div>
+                <div class="lic-card">
+                    <div class="lic-name">Motorcycle Licence</div>
+                    <div class="lic-issuer">Service NSW</div>
+                    <div class="lic-note">Unrestricted (UR)</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ── Footer ───────────────────────────────────────────────── -->
+    <footer>
+        <p>Keirran Blackley &mdash; <a href="https://skunkei.com" target="_blank" rel="noopener noreferrer">skunkei.com</a> &mdash; New South Wales, Australia</p>
+        <p style="margin-top:8px"><a href="resume.html">View printable resume &rarr;</a></p>
+    </footer>
+
+    <script>
+        /* ── Nav: scroll glass effect ─────────────────────────── */
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 30);
+        }, { passive: true });
+
+        /* ── Nav: hamburger ───────────────────────────────────── */
+        const hamburger  = document.getElementById('hamburger');
+        const navDrawer  = document.getElementById('nav-drawer');
+
+        hamburger.addEventListener('click', () => {
+            const open = hamburger.classList.toggle('open');
+            navDrawer.classList.toggle('open', open);
+            hamburger.setAttribute('aria-expanded', open);
+            navDrawer.setAttribute('aria-hidden', !open);
+        });
+
+        document.querySelectorAll('.drawer-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                navDrawer.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+                navDrawer.setAttribute('aria-hidden', 'true');
+            });
+        });
+
+        /* ── Nav: active section highlight ───────────────────── */
+        const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+        const sectionIds = ['about', 'skills', 'experience', 'projects', 'education'];
+
+        const activeSectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navAnchors.forEach(a => {
+                        a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+                    });
+                }
+            });
+        }, { rootMargin: '-35% 0px -55% 0px' });
+
+        sectionIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) activeSectionObserver.observe(el);
+        });
+
+        /* ── Scroll reveal ─────────────────────────────────────── */
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        /* ── Typewriter ────────────────────────────────────────── */
+        const phrases = [
+            'Electronic Security Technician',
+            'Alarm & CCTV Specialist',
+            'Self-Taught Developer',
+            'Trade Professional',
+            'Builder of Things',
+        ];
+        const twEl = document.getElementById('tw');
+        let pi = 0, ci = 0, deleting = false;
+
+        function tick() {
+            const phrase = phrases[pi];
+            if (!deleting) {
+                ci++;
+                twEl.textContent = phrase.slice(0, ci);
+                if (ci === phrase.length) {
+                    deleting = true;
+                    setTimeout(tick, 2200);
+                    return;
+                }
+            } else {
+                ci--;
+                twEl.textContent = phrase.slice(0, ci);
+                if (ci === 0) {
+                    deleting = false;
+                    pi = (pi + 1) % phrases.length;
+                }
+            }
+            setTimeout(tick, deleting ? 38 : 68);
+        }
+        setTimeout(tick, 900);
+
+        /* ── Experience tabs ─────────────────────────────────────── */
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.tab;
+
+                document.querySelectorAll('.tab-btn').forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+                document.getElementById(`tab-${target}`).classList.add('active');
+            });
+        });
+
+        /* ── Timeline accordion ─────────────────────────────────── */
+        function bindTimelineCards() {
+            document.querySelectorAll('.tl-card').forEach(card => {
+                if (card._bound) return;
+                card._bound = true;
+
+                const activate = () => {
+                    const body   = card.querySelector('.tl-body');
+                    const isOpen = card.classList.contains('open');
+
+                    // Close others in the same panel only
+                    const panel = card.closest('.tab-panel, .timeline');
+                    panel.querySelectorAll('.tl-card.open').forEach(c => {
+                        c.classList.remove('open');
+                        c.querySelector('.tl-body').classList.remove('open');
+                        c.setAttribute('aria-expanded', 'false');
+                    });
+
+                    if (!isOpen) {
+                        card.classList.add('open');
+                        body.classList.add('open');
+                        card.setAttribute('aria-expanded', 'true');
+                    }
+                };
+
+                card.addEventListener('click', activate);
+                card.addEventListener('keydown', e => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        activate();
+                    }
+                });
+            });
+        }
+        bindTimelineCards();
+
+        /* ── Skills filter ───────────────────────────────────────── */
+        document.querySelectorAll('.filter-pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.skill-group').forEach(g => {
+                    g.classList.toggle('hidden', filter !== 'all' && g.dataset.cat !== filter);
+                });
+            });
+        });
+
+        /* ── Project card mouse-tracking glow ───────────────────── */
+        document.querySelectorAll('.proj-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const r = card.getBoundingClientRect();
+                card.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
+                card.style.setProperty('--my', `${((e.clientY - r.top)  / r.height) * 100}%`);
+            });
+        });
+    </script>
+</body>
+</html>

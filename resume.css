@@ -1,0 +1,662 @@
+/* ── Resume Page ──────────────────────────────────────────── */
+.resume-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 24px;
+    background: #1a1a1a;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.resume {
+    width: 210mm;
+    min-height: 297mm;
+    background: #ffffff;
+    color: #1a1a1a;
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ── Page 2 continuation bar ─────────────────────────────── */
+.resume-p2-bar {
+    height: 5px;
+    background: #111111;
+}
+.resume-p2-label {
+    background: #111111;
+    padding: 8px 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resume-p2-label span {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.resume-header {
+    background: #0f0f0f;
+    color: #f0f0f0;
+    display: flex;
+    position: relative;
+}
+
+.resume-header-bar {
+    width: 5px;
+    background: linear-gradient(180deg, #ffffff 0%, #444444 100%);
+    flex-shrink: 0;
+}
+
+.resume-header-content {
+    flex: 1;
+    padding: 30px 36px 26px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.resume-header-identity h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.resume-header-identity .tagline {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.resume-header-meta {
+    text-align: right;
+    font-size: 0.73rem;
+    line-height: 1.9;
+    color: #555555;
+}
+
+.resume-header-meta a {
+    color: #666666;
+    text-decoration: none;
+}
+
+/* ── Accent Bar ────────────────────────────────────────────── */
+.resume-accent {
+    height: 4px;
+    background: linear-gradient(90deg, #111111 0%, #666666 60%, #cccccc 100%);
+}
+
+/* ── Body ─────────────────────────────────────────────────── */
+.resume-body {
+    flex: 1;
+    padding: 32px 44px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* ── Section ─────────────────────────────────────────────── */
+.resume-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Section Headings ─────────────────────────────────────── */
+.resume-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #111111;
+}
+
+.resume-section-title::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 13px;
+    background: #111111;
+    flex-shrink: 0;
+    border-radius: 1px;
+}
+
+/* ── Profile ─────────────────────────────────────────────── */
+.resume-profile p {
+    font-size: 0.83rem;
+    line-height: 1.75;
+    color: #333333;
+}
+
+/* ── Skills ───────────────────────────────────────────────── */
+.resume-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.skill-row-label {
+    font-size: 0.59rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    white-space: nowrap;
+    padding-top: 4px;
+    min-width: 88px;
+}
+
+.skill-row-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skill-tag {
+    font-size: 0.69rem;
+    font-weight: 500;
+    color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 3px 9px;
+    line-height: 1.2;
+    background: #fafafa;
+}
+
+/* ── Career Timeline ─────────────────────────────────────── */
+.resume-timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #e0e0e0;
+    margin-left: 6px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.timeline-entry {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.timeline-entry:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background: #111111;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #cccccc;
+}
+
+.timeline-entry-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0 12px;
+    margin-bottom: 3px;
+}
+
+.timeline-entry-title {
+    font-size: 0.87rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.2;
+}
+
+.timeline-entry-date {
+    font-size: 0.67rem;
+    font-weight: 600;
+    color: #888888;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    text-align: right;
+    padding-top: 2px;
+    grid-row: 1;
+}
+
+.timeline-entry-org {
+    font-size: 0.76rem;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+.timeline-entry-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.timeline-entry-bullets li {
+    font-size: 0.77rem;
+    color: #444444;
+    line-height: 1.55;
+    padding-left: 12px;
+    position: relative;
+}
+
+.timeline-entry-bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: #cccccc;
+}
+
+/* ── Education Entries ────────────────────────────────────── */
+.resume-edu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.edu-entry {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0 16px;
+    padding: 14px 18px;
+    background: #f7f7f7;
+    border-left: 3px solid #1a1a1a;
+    border-radius: 0 4px 4px 0;
+}
+
+.edu-entry-qual {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.3;
+    grid-column: 1;
+}
+
+.edu-entry-inst {
+    font-size: 0.74rem;
+    color: #666666;
+    margin-top: 3px;
+    grid-column: 1;
+}
+
+.edu-entry-date {
+    font-size: 0.67rem;
+    font-weight: 600;
+    color: #888888;
+    white-space: nowrap;
+    text-align: right;
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 2px;
+}
+
+.edu-entry-notes {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.edu-entry-notes li {
+    font-size: 0.74rem;
+    color: #555555;
+    line-height: 1.5;
+    padding-left: 12px;
+    position: relative;
+}
+
+.edu-entry-notes li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: #cccccc;
+}
+
+/* ── Licences ─────────────────────────────────────────────── */
+.resume-licences {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.licence-card {
+    padding: 14px 16px;
+    border: 1px solid #e4e4e4;
+    border-top: 3px solid #111111;
+    border-radius: 0 0 4px 4px;
+    background: #fdfdfd;
+}
+
+.licence-card-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.licence-card-issuer {
+    font-size: 0.7rem;
+    color: #666666;
+    margin-bottom: 3px;
+}
+
+.licence-card-note {
+    font-size: 0.64rem;
+    color: #999999;
+}
+
+/* ── Languages ────────────────────────────────────────────── */
+.resume-languages {
+    display: flex;
+    gap: 12px;
+}
+
+.lang-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 18px;
+    background: #f7f7f7;
+    border-left: 3px solid #1a1a1a;
+    border-radius: 0 4px 4px 0;
+}
+
+.lang-card-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.lang-card-level {
+    font-size: 0.68rem;
+    color: #888888;
+}
+
+/* ── Projects ─────────────────────────────────────────────── */
+.resume-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.project-card {
+    padding: 16px 16px 14px;
+    border: 1px solid #e4e4e4;
+    border-top: 3px solid #111111;
+    border-radius: 0 0 4px 4px;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.project-card-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.2;
+}
+
+.project-card-type {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #888888;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+.project-card-desc {
+    font-size: 0.74rem;
+    color: #444444;
+    line-height: 1.55;
+}
+
+.project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 2px;
+}
+
+.project-card-tag {
+    font-size: 0.62rem;
+    font-weight: 500;
+    color: #555555;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    padding: 2px 6px;
+    background: #f5f5f5;
+}
+
+/* ── Print Styles ─────────────────────────────────────────── */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        background: #ffffff !important;
+    }
+
+    nav, .site-footer, .nav, footer {
+        display: none !important;
+    }
+
+    .resume-wrap {
+        padding: 0;
+        background: transparent;
+        min-height: unset;
+        gap: 0;
+    }
+
+    .resume {
+        box-shadow: none;
+        width: 210mm;
+    }
+
+    .resume:not(:last-child) {
+        break-after: page;
+    }
+
+    .resume-header-content {
+        padding: 20px 28px 18px 22px;
+    }
+
+    .resume-header-identity h1 {
+        font-size: 1.75rem;
+    }
+
+    .resume-body {
+        padding: 20px 36px 28px;
+        gap: 18px;
+    }
+
+    .resume-section-title {
+        font-size: 0.56rem;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+    }
+
+    .resume-profile p {
+        font-size: 0.75rem;
+        line-height: 1.58;
+    }
+
+    .skill-tag {
+        font-size: 0.62rem;
+        padding: 2px 7px;
+    }
+
+    .skill-row-label {
+        font-size: 0.54rem;
+        min-width: 74px;
+    }
+
+    .resume-timeline {
+        padding-left: 18px;
+    }
+
+    .timeline-entry {
+        padding-bottom: 12px;
+    }
+
+    .timeline-entry::before {
+        left: -24px;
+    }
+
+    .timeline-entry-title {
+        font-size: 0.78rem;
+    }
+
+    .timeline-entry-org {
+        font-size: 0.67rem;
+        margin-bottom: 4px;
+    }
+
+    .timeline-entry-date {
+        font-size: 0.62rem;
+    }
+
+    .timeline-entry-bullets {
+        gap: 1px;
+    }
+
+    .timeline-entry-bullets li {
+        font-size: 0.69rem;
+        line-height: 1.4;
+    }
+
+    .resume-edu-list {
+        gap: 10px;
+    }
+
+    .edu-entry {
+        padding: 10px 14px;
+    }
+
+    .edu-entry-qual {
+        font-size: 0.77rem;
+    }
+
+    .edu-entry-inst {
+        font-size: 0.68rem;
+    }
+
+    .edu-entry-date {
+        font-size: 0.62rem;
+    }
+
+    .edu-entry-notes {
+        margin-top: 5px;
+    }
+
+    .edu-entry-notes li {
+        font-size: 0.67rem;
+    }
+
+    .resume-licences {
+        gap: 10px;
+    }
+
+    .licence-card {
+        padding: 10px 12px;
+    }
+
+    .licence-card-name {
+        font-size: 0.71rem;
+    }
+
+    .licence-card-issuer {
+        font-size: 0.63rem;
+    }
+
+    .licence-card-note {
+        font-size: 0.59rem;
+    }
+
+    .lang-card {
+        padding: 8px 14px;
+    }
+
+    .lang-card-name {
+        font-size: 0.74rem;
+    }
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media screen and (max-width: 680px) {
+    .resume-wrap {
+        padding: 0;
+        gap: 12px;
+    }
+
+    .resume {
+        width: 100%;
+        min-height: unset;
+    }
+
+    .resume-body {
+        padding: 20px 24px 28px;
+    }
+
+    .resume-header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resume-header-meta {
+        text-align: left;
+    }
+
+    .resume-licences {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-p2-label {
+        padding: 8px 24px 10px;
+    }
+}
